@@ -56,7 +56,7 @@ TOOLS REQUIRED TO RUN ALL THE STUFF IN THIS PROJECT:
 - Gradle
 
 if something is missing email me at:
-a.sosa@globant.com
+alan.sosa.mejia@gmail.com
 
 ### Prerequisites
 
@@ -313,4 +313,4 @@ and see how the pods auto-scale by themselves.
 
 ## Authors
 
-* **Alan Sosa Mejia** - *Test Automation Engineer* - [Alan Sosa Mejia](https://github.globant.com/a-sosa/) - *Not in a project yet :C*
+* **Alan Sosa Mejia** - *Backend Developer* - [Alan Sosa Mejia](https://github.com/alansosame/)
