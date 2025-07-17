@@ -1,0 +1,19 @@
+#Starts from gradle image and name the image layer as 'build'
+FROM gradle:7.3.1-jdk11-alpine AS build
+#Copy the source code inside the container.
+COPY --chown=gradle:gradle . /home/gradle/src
+#Sets working dir for future commands
+WORKDIR /home/gradle/src
+#build the code.
+RUN gradle build --no-daemon -x test
+
+#Get Java Image
+FROM openjdk:8-jre-alpine
+#Create /app dir inside the container
+RUN mkdir /app
+#Copy from 'build' image layer to container's /app folder and rename the .jar.
+COPY --from=build /home/gradle/src/build/libs/*.jar /app/myapp.jar
+#ADD build/libs/BuenasNochesAPI-0.0.1-SNAPSHOT.jar /app/myapp.jar
+
+#Run the application
+ENTRYPOINT ["java", "-jar", "/app/myapp.jar"]
