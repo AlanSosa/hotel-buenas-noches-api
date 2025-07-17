@@ -313,4 +313,4 @@ and see how the pods auto-scale by themselves.
 
 ## Authors
 
-* **Alan Sosa Mejia** - *Backend Developer* - [Alan Sosa Mejia](https://github.com/alansosame/)
+* **Alan Sosa Mejia** - *Backend Developer* - [Alan Sosa Mejia](https://github.com/alansosa)
